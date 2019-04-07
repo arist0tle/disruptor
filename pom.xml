@@ -12,6 +12,7 @@
         <module>disruptor-common</module>
         <module>disruptor-core</module>
         <module>disruptor-server</module>
+        <module>disruptor-example</module>
     </modules>
 
 

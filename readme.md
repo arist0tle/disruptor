@@ -14,10 +14,11 @@
 
 # 模块的分工如何？
 - 模块划分：
-    * common 公共依赖模块
-    * core   后端核心模块
-    * server 服务层模块  这里提供套接字访问
-    * api    提供外部接口，含tcp和http
+    * disruptor-common    公共依赖模块
+    * disruptor-core      后端核心模块
+    * disruptor-server    服务层模块  这里提供套接字访问
+    * disruptor-api       提供外部接口，含tcp和http
+    * disruptor-example   测试用例集合，由于工程可能会比较庞大，测试用例集中到一个模块
 
 # 如何构建？
 
