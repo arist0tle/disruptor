@@ -1,41 +1,44 @@
-# ���ϵͳ����ʲô��
-- ���һ���о�ѧϰ�������׽��ֵĹ���
-- ���̳�ʼ״̬����Ҫ�κ�����
-- ԭʼ��disruptor��������һ��ŷ�޽��ڹ�˾LAMX�������ڲ�ϵͳ��ʹ��gradle���������͹���
-- �ҵļƻ����Ķ������Ŀ��ÿһ�д��룬������������Ƴ���
-- ����һ�����ڵĿ�Դ��Ŀ���ƻ������ܾ�
+# 这个系统能做什么？
+- 这个一个研究学习高性能套接字的工程
+- 工程初始状态不需要任何依赖
+- 原始的disruptor工程是由一家欧洲金融公司LAMX开发的内部系统，使用gradle管理依赖和构建
+- 我的计划是阅读这个项目的每一行代码，并理解它的设计初衷
+- 这是一个长期的开源项目，计划持续很久
 
-# �����ƻ���ʲô��
-- �ƻ�����disruptor����һ���߲�������
+# 开发计划是什么？
+- 计划是用disruptor构建一个高并发服务
 
-# ֧�ֵ�Э������Щ��
-- Э��
-    * ֧��tcp��http����Ҫ��tcp
+# 支持的协议有哪些？
+- 协议
+    * 支持tcp和http，主要是tcp
 
-# ģ��ķֹ���Σ�
-- ģ�黮�֣�
-    * disruptor-common    ��������ģ��
-    * disruptor-core      ��˺���ģ��
-    * disruptor-server    �����ģ��  �����ṩ�׽��ַ���
-    * disruptor-api       �ṩ�ⲿ�ӿڣ���tcp��http
-    * disruptor-example   �����������ϣ����ڹ��̿��ܻ�Ƚ��Ӵ󣬲����������е�һ��ģ��
+# 模块的分工如何？
+- 模块划分：
+    * disruptor-common    公共依赖模块
+    * disruptor-core      后端核心模块
+    * disruptor-server    服务层模块  这里提供套接字访问
+    * disruptor-api       提供外部接口，含tcp和http
+    * disruptor-example   测试用例集合，由于工程可能会比较庞大，测试用例集中到一个模块
 
-# ��ι�����
-
-
-# disruptor��ԭ����ʲô��
+# 如何构建？
 
 
-# RingBuffer�İ��������
+# disruptor的原理是什么？
 
 
-# �߳�֮�����Э����
+# RingBuffer的奥秘在哪里？
 
 
-# �Ƿ�֧�ֲַ�ʽ��
+# 线程之间如何协调？
 
 
-# ������ƣ�
+# 是否支持分布式？
 
 
-# ��������
+# 缓存机制？
+
+
+# 其他问题
+
+
+xxxxx
